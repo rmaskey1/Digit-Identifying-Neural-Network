@@ -1,19 +1,18 @@
 # Project README
 
 ## Overview
-This project is designed to provide an interactive web application using Streamlit, allowing users to explore and analyze data through a user-friendly interface. The application leverages advanced data processing techniques and visualizations to deliver insights and facilitate decision-making.
+This project displays 2 implementations of a three-layered neural network to identify handwritten digits, trained using the MNIST dataset. The 2 implementations of the neural network include:
+1. Low-Level/Algorithmic Implementation
+2.Sophisticated/Library-based Implemetation
 
 ## Project Structure
 The codebase is organized into two main sections: low-level implementations and sophisticated abstractions.
 
 ### Low-Level Implementations
-- **Data Processing**: This section includes scripts for data cleaning, transformation, and basic analysis. It focuses on efficient handling of data using libraries such as Pandas and NumPy.
-- **Utility Functions**: A collection of helper functions that support various operations throughout the project, ensuring code reusability and modularity.
+- This implementation uses Numpy and pure linear algebra to implement custom forward and backward propagation and stochastic gradient descent functions for self-training, and Matplotlib to visualize the error rate per epoch during the training phase
 
 ### Sophisticated Implementations
-- **Machine Learning Models**: This part of the codebase contains implementations of various machine learning algorithms, including training, evaluation, and prediction functionalities.
-- **Visualization**: Advanced visualizations are created using libraries like Matplotlib and Seaborn, providing users with insightful graphical representations of the data.
-- **Streamlit Interface**: The main application logic that integrates the backend processing with the frontend interface, allowing users to interact with the data seamlessly.
+- This implementation uses modern tools/libraries, namely OpenCV and Tensorflow, to implement a high-level neural network model
 
 ## Project Setup
 ### Dependencies
@@ -27,11 +26,15 @@ To run this project, ensure you have the following dependencies installed:
 - Seaborn 0.11.0 or higher
 - Scikit-learn 0.24.0 or higher
 
+```bash
+pip install streamlit pandas numpy matplotlib scikit-learn
+```
+
 ### Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/yourproject.git
-   cd yourproject
+   cd Digit-Identifying-Neural-Network
    ```
 
 2. Create a virtual environment (optional but recommended):
@@ -48,7 +51,8 @@ To run this project, ensure you have the following dependencies installed:
 ## Running the Project
 To run the application, use the following command in your terminal:
 ```bash
-streamlit run app.py
+cd "Sophisticated NN"
+streamlit run user_interface.py
 ```
 This will start a local server, and you can access the application in your web browser at `http://localhost:8501`.
 
