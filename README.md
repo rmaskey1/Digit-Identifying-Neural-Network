@@ -8,10 +8,10 @@ This project displays 2 implementations of a three-layered neural network to ide
 ## Project Structure
 The codebase is organized into two main sections: low-level implementations and sophisticated abstractions.
 
-### Low-Level Implementations
+### Low-Level Implementation
 - This implementation uses Numpy and pure linear algebra to implement custom forward and backward propagation and stochastic gradient descent functions for self-training, and Matplotlib to visualize the error rate per epoch during the training phase
 
-### Sophisticated Implementations
+### Sophisticated Implementation
 - This implementation uses modern tools/libraries, namely OpenCV and Tensorflow, to implement a high-level neural network model
 
 ## Project Setup
