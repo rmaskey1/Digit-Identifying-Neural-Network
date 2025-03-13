@@ -3,7 +3,7 @@
 ## Overview
 This project displays 2 implementations of a three-layered neural network to identify handwritten digits, trained using the MNIST dataset. The 2 implementations of the neural network include:
 1. Low-Level/Algorithmic Implementation
-2.Sophisticated/Library-based Implemetation
+2. Sophisticated/Library-based Implemetation
 
 ## Project Structure
 The codebase is organized into two main sections: low-level implementations and sophisticated abstractions.
