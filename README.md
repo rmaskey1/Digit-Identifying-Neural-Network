@@ -70,3 +70,8 @@ This will start a local server, and you can access the application in your web b
 As of now, there is an issue with retrieving data from the user interface. The neural network is designed to accurate process 28x28 pixel digit images. When taking the handdrawn digit from the user input, the program scales it down to 28x28 pixels. However, this image transformation creates inaccuracies in the pixel data, resulting in inaccurate predictions from the AI model. When testing the model with true 28x28 pixel digit images, the model works almost perfectly. Below, you can see the accuracy and loss of each training epoch:
 
 ![image](https://github.com/user-attachments/assets/c188b5d0-fba7-4aa8-9efa-382e915a1164)
+
+To further test the neural network, you can run and modify the ```sophisticated_nn_test.py``` file:
+```bash
+python sophisticated_nn_test.py
+```
